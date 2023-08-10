@@ -1,0 +1,52 @@
+@import "../theme.scss";
+
+.Page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Title {
+    width: 50%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 28px;
+}
+.FilterBar {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.FilterBar select {
+    width: 300px;
+}
+.Body {
+    display: flex;
+    justify-content: space-between;
+}
+.Chart {
+    width: 70%;
+    min-height: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+.Custom {
+    width: 28%;
+    min-height: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .Body {
+    flex-direction: column;
+  }
+  .Chart {
+    width: 100%;
+  }
+  .Custom {
+    width: 100%;
+  }
+}
